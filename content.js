@@ -1,10 +1,5 @@
 const domLoaded = () => {
     document.body.onkeydown = e => {
-        //do not interfere with navigating jio in-video slider
-        if (isJioSlickSlider(e)) {
-            return;
-        }
-
         const videos = document.getElementsByTagName('video');
 
         if (videos.length > 0) {
@@ -27,10 +22,6 @@ const domLoaded = () => {
             }
         }
     }
-}
-
-const isJioSlickSlider = e => {
-    return e.target.className.toLowerCase().includes('slick-');
 }
 
 if (document.readyState === "complete" || document.readyState === "interactive") {
