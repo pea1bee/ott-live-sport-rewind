@@ -1,11 +1,11 @@
 {
-  "name": "OTT Platforms Video Forward/Rewind with Arrow Keys",
+  "name": "OTT Live Sport Video Forward/Rewind with Arrow Keys",
   "version": "1.0",
-  "description": "Forward and rewind video playback on OTT platforms like Jiocinema with keyboard arrow keys",
+  "description": "Rewind and fast-forward IPL, live sport streams on Hotstar and SonyLiv using keyboard arrow keys.",
   "manifest_version": 3,
   "content_scripts": [
     {
-      "matches": ["https://www.jiocinema.com/*", "https://www.sonyliv.com/*", "https://www.hotstar.com/*"],
+      "matches": ["https://www.hotstar.com/*", "https://www.sonyliv.com/*"],
       "run_at": "document_idle",
       "js": ["content.js"]
     }
